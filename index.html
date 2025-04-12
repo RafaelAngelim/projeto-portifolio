@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Viana Angelim - Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="profile-header">
+      <img src="midia/WhatsApp Image 2025-04-12 at 11.55.33_010a56f5.jpg" alt="Foto de perfil de Rafael" class="profile-img">
+      <div>
+        <h1>Rafael Viana Angelim</h1>
+        <p>Estudante de Ciências da Computação | Desenvolvedor em formação</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('sobre')">Sobre</a>
+    <a href="#" onclick="showSection('projetos')">Projetos</a>
+    <a href="#" onclick="showSection('jogo')">Jogo Senha</a>
+  </nav>
+
+  <div class="container">
+    <section id="sobre" class="content-section">
+      <h2>Sobre Mim</h2>
+      <p>Sou Rafael Viana Angelim, estudante de Ciências da Computação do quinto período na Universidade Católica de Pernambuco, onde desenvolvi uma sólida base em conteúdos como: SQL, Power BI, Excel, Python, CPP, Metodologias Ágeis... aliados à cursos e livros. Além disso, participei de programas de extensão, como o de programação competitiva, onde refinei minhas habilidades em resolução de problemas complexos e otimização de algoritmos.
+      </p>
+      <div class="linguagens-fixas">
+        <p class="titulo-linguagens">Linguagens de Programação</p>
+        <div class="linguagens-container">
+          <span class="linguagem-chip">Python</span>
+          <span class="linguagem-chip">C</span>
+          <span class="linguagem-chip">C++</span>
+          <span class="linguagem-chip">Java</span>
+          <span class="linguagem-chip">SQL</span>
+          <span class="linguagem-chip">JavaScript</span>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="projetos" class="content-section" style="display:none">
+      <h2>Projetos</h2>
+      <ul>
+        <li>
+          <div class="tooltip">
+            <a href="https://github.com/RafaelAngelim/LELEO-Arvores/blob/main/projeto/projeto-ordenacao.py" 
+               target="_blank" 
+               class="repo-button">Projeto de análise de algoritmos</a>
+            <span class="tooltiptext">Análise de desempenho e comparação de tempo de execução de algoritmos de ordenação com visualização em Python.</span>
+          </div>
+        </li>
+      
+        <li>Jogo da Senha (Bulls and Cows)</li>
+      
+        <li>
+          <div class="tooltip">
+            <a href="https://github.com/Dudubraga/Lounge-Acai" 
+               target="_blank" 
+               class="repo-button">Projeto Lounge do Açaí</a>
+            <span class="tooltiptext">Criação de uma APK de sistema de auto-atendimento para uma loja de açaí</span>
+          </div>
+        </li>
+      </ul>
+      
+      
+      
+    </section>
+
+    <section id="jogo" class="content-section" style="display:none">
+      <h2>Jogo Senha (Bulls and Cows)</h2>
+      <input type="text" id="guessInput" maxlength="4" placeholder="1234">
+      <button onclick="checkGuess()">Tentar</button>
+      <button onclick="revealSecret()">Mostrar Senha</button>
+      <ul id="history"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <div class="floating-buttons">
+    <button onclick="window.open('https:github.com/RafaelAngelim', '_blank')" title="GitHub">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub">
+    </button>
+    <button onclick="window.open('https:instagram.com/rafael_angeliim', '_blank')" title="Instagram">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+    </button>
+    <button onclick="mostrarEmail()" title="E-mail">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="E-mail">
+    </button>
+  </div>
+  
+</body>
+</html>
